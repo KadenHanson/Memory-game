@@ -1,3 +1,4 @@
+// The card type for the project
 class Card {
     constructor(value, version, faceUp, index) {
         this.value = value;
