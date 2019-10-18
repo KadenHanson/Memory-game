@@ -139,6 +139,7 @@ class Game {
         if (this.matchedPairs.length == pairsNeeded) {
             alert('You win!');
             this.stopTimer();
+            // Sets up the high score, or updates it if it already exists
             if (window.localStorage.getItem('high-score') == undefined || window.localStorage.getItem('high-score') == null) {
                 let _highScore = {'4x4': '', '6x6': '', '8x8': ''};
                 _highScore[this.mode] = this.score;
