@@ -1,0 +1,117 @@
+@font-face {
+    src: url('../fonts/TitilliumWeb-SemiBold.ttf');
+    font-family: Titillium;
+}
+
+body {
+    background: url('../images/background.jpg') no-repeat;
+    background-size: cover;
+    user-select: none;
+    overflow-x: hidden;
+    font-family: Titillium;
+    font-size: 18px;
+}
+
+#main-container {
+    margin: auto;
+}
+
+#main-container[class="4x4"] {
+    width: 1150px;
+}
+
+#main-container[class="6x6"] {
+    width: 1600px;
+}
+
+#main-container[class="8x8"] {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.card {
+    margin: 10px 20px;
+    float: left;
+    width: 225px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+[class="8x8"] .card {
+    width: 175px;
+}
+
+[class="8x8"] .card img {
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.selected {
+    border-color: blue !important;
+}
+
+.matched {
+    border-color: green !important;
+}
+
+.timer-container {
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    color: white;
+}
+
+#timer {
+    display: inline-block;
+}
+
+.score-container {
+    position: fixed;
+    right: 40px;
+    top: 50px;
+    color: white;
+}
+
+#score {
+    display: inline-block;
+}
+
+.button-container {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+}
+
+#start-game {
+    box-shadow: none !important;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body input {
+    width: 100px;
+    margin: 0px 10px;
+}
+
+.hi-score-container {
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    color: white;
+}
+
+#high-score {
+    display: inline-block;
+}
