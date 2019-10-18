@@ -105,6 +105,7 @@ class Game {
             return false;
         }
 
+        // Literally useless, never used. Maybe I should delete it...
         this.cards[_card_1.index].faceUp = true;
         this.cards[_card_2.index].faceUp = true;
 
